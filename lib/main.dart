@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'trekking/home_trekking_animator.dart';
+import 'trekking/staggered_trekking_animation.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeTrekkingAnimator(),
+      home: StaggeredTrekkingAnimation(),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeTrekkingEnterAnimation {
-  HomeTrekkingEnterAnimation(this.controller)
+class StaggeredTrekkingEnterAnimation {
+  StaggeredTrekkingEnterAnimation(this.controller)
       : barHeight = Tween<double>(begin: 0, end: 150).animate(
           CurvedAnimation(
             parent: controller,

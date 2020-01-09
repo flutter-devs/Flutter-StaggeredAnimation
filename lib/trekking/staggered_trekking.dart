@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:stag_animation/trekking/home_trekking_enter_animation.dart';
+import 'package:stag_animation/trekking/staggered_trekking_enter_animation.dart';
 
-class HomeTrekking extends StatelessWidget {
-  HomeTrekking({
+class StaggeredTrekking extends StatelessWidget {
+  StaggeredTrekking({
     Key key,
     @required AnimationController controller,
-  })  : animation = HomeTrekkingEnterAnimation(controller),
+  })
+      : animation = StaggeredTrekkingEnterAnimation(controller),
         super(key: key);
-  final HomeTrekkingEnterAnimation animation;
+  final StaggeredTrekkingEnterAnimation animation;
 
   @override
   Widget build(BuildContext context) {

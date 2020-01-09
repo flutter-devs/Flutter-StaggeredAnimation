@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:stag_animation/trekking/home_trekking.dart';
+import 'package:stag_animation/trekking/staggered_trekking.dart';
 
-class HomeTrekkingAnimator extends StatefulWidget {
+class StaggeredTrekkingAnimation extends StatefulWidget {
   @override
-  _HomeTrekkingAnimatorState createState() => _HomeTrekkingAnimatorState();
+  _StaggeredTrekkingAnimationState createState() =>
+      _StaggeredTrekkingAnimationState();
 }
 
-class _HomeTrekkingAnimatorState extends State<HomeTrekkingAnimator>
+class _StaggeredTrekkingAnimationState extends State<StaggeredTrekkingAnimation>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
 
@@ -42,7 +43,7 @@ class _HomeTrekkingAnimatorState extends State<HomeTrekkingAnimator>
       onTap: () {
         _playAnimation();
       },
-      child: HomeTrekking(
+      child: StaggeredTrekking(
         controller: _controller,
       ),
     );
